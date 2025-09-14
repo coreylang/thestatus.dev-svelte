@@ -51,11 +51,11 @@
           <a href="#how-it-works" class="hover:text-black" on:click={() => (menuOpen = false)}>How It Works</a>
           <a href="#faq" class="hover:text-black" on:click={() => (menuOpen = false)}>FAQ</a>
         {:else}
-          <a href="/" class="hover:text-black" on:click={() => (menuOpen = false)}>Home</a>
+          <a href="{base}" class="hover:text-black" on:click={() => (menuOpen = false)}>Home</a>
         {/if}
         <hr class="border-gray-200" />
-        <a href="/auth/login" on:click={() => (menuOpen = false)}>Login</a>
-        <a href="/auth/signup" class="rounded-xl bg-[#1C3D5A] p-2.5 text-white hover:bg-black text-center" on:click={() => (menuOpen = false)}>Signup</a>
+        <a href="{base}/auth/login" on:click={() => (menuOpen = false)}>Login</a>
+        <a href="{base}/auth/signup" class="rounded-xl bg-[#1C3D5A] p-2.5 text-white hover:bg-black text-center" on:click={() => (menuOpen = false)}>Signup</a>
       </nav>
     </div>
   {/if}
