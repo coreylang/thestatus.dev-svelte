@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+html { 
+    scroll-behavior: smooth; 
+}
+body {
+    @apply bg-white text-gray-900;
+    font-family: 'Inter';
+
+}
+header {
+    margin: 10px 50px 20px 50px;
+    font-family: 'Poppins';
+}
+footer {
+    @apply bg-black text-white text-sm;
+    padding: 10px 50px;
+    text-align: center;
+}
